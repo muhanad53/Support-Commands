@@ -15,9 +15,9 @@ function loadCommands(client) {
             let command = require(`../Commands/${folder}/${file}`);
             if (command.name) {
                 client.commands.set(command.name, command);
-                table.addRow(file, '✅');
+                table.addRow(file,folder, '✅');
             } else {
-                table.addRow(file, '❌');
+                table.addRow(file,folder, '❌');
                 continue;
             }
         }

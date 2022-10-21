@@ -1,4 +1,3 @@
-const { error } = require("console");
 const { Client } = require("discord.js");
 
 /**
@@ -28,9 +27,9 @@ function loadEvents(client) {
                         client.on(event.name, (...args) => event.execute(...args, client));
                     }
                 }
-                table.addRow(file, '✅');
+                table.addRow(file,folder, '✅');
             } else {
-                table.addRow(file, '❌');
+                table.addRow(file,folder, '❌');
                 continue;
             }
         }

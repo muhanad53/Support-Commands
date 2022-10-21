@@ -1,8 +1,6 @@
 {
-    "botMainColor": "0xff5454",
-    "botErrorColor": "0xdb3535",
     "developerGuild": "1010694388000772266",
     "activityInterval": 5,
-    "prefix": "v!",
+    "prefix": "Your Prefix",
     "database": "mongodb+srv://c4clan3:c4clan3@c4clan3.ufkpd.mongodb.net/?retryWrites=true&w=majority"
 }
