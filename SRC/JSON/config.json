@@ -1,5 +1,5 @@
 {
-    "developerGuild": "1010694388000772266",
+    "developerGuild": "Your GuildID",
     "activityInterval": 5,
     "prefix": "Your Prefix",
     "database": "mongodb+srv://c4clan3:c4clan3@c4clan3.ufkpd.mongodb.net/?retryWrites=true&w=majority"
