@@ -29,7 +29,7 @@ function loadSlashCommands(client) {
             }
         }
     client.application.commands.set(commandsArray)
-
+    //Go To "config.json" and past your GuildID
     const developerGuild = client.guilds.cache.get(client.config.developerGuild)
 
     developerGuild.commands.set(developerArray);
