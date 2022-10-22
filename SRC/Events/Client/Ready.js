@@ -19,24 +19,20 @@ module.exports = {
     console.log(
       `Logged in as ${client.user.tag} and running on ${client.guilds.cache.size} Server !`
     );
-   // updateActivity(client)
+   updateActivity(client)
+   async function updateActivity(client) {
+
+    let servercount = await client.guilds.cache.size
+  
+    const activities = [
+      `Trusted by: ${servercount} Server`,
+      `Created by DevProfessionalッ#8865`,
+    ]
+  
+    setInterval(() => {
+      const status = activities[Math.floor(Math.random() * activities.length)]
+      client.user.setActivity(status)
+    }, activityInterval*1000)
+  }
   },
 };
-
-/**
- * @param {Client} client
- */
-/*async function updateActivity(client) {
-
-  let servercount = await client.guilds.cache.size
-
-  const activities = [
-    `Trusted by: ${servercount} Server`,
-    `Created by YassineHzz`,
-  ]
-
-  setInterval(() => {
-    const status = activities[Math.floor(Math.random() * activities.length)]
-    client.user.setActivity(status)
-  }, activityInterval*1000)
-}*/
